@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy: #021B2C;
+  --color-blue: #065A82;
+  --color-teal: #1C7293;
+  --color-mint: #02C39A;
+  --color-light: #EEF6FA;
+  --color-muted: #5B8FA8;
+  --color-dark: #062A42;
+  --color-gray: #94A3B8;
+  --color-border: rgba(28, 114, 147, 0.18);
+}
+
+@layer base {
+  body {
+    @apply bg-navy text-white min-h-screen overflow-x-hidden font-sans;
+  }
+
+  body::before {
+    content: '';
+    @apply fixed inset-0 pointer-events-none z-0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(2, 195, 154, 0.06) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 80%, rgba(6, 90, 130, 0.1) 0%, transparent 50%);
+  }
+}

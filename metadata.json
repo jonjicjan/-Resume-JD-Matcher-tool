@@ -1,0 +1,6 @@
+{
+  "name": "ResuMatch",
+  "description": "AI-powered resume and job description matching tool that identifies skill gaps and provides actionable feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
